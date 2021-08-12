@@ -1,0 +1,119 @@
+
+
+/*=====================================
+          RESUME CARD STYLE
+======================================*/
+.resume-card {
+    width: 100%;
+    border-radius: 8px;
+    background: var(--white);
+    padding: 50px 45px 45px;
+    margin-bottom: 30px;
+    box-shadow: 0px 8px 35px 0px rgba(0, 0, 0, 0.15);
+    @include cursor__transition;
+
+    &:hover {
+        background: var(--primary);
+
+        .resume-icon {
+            i {
+                color: var(--white);
+            }
+        }
+
+        .resume-meta {
+            h4,
+            h5 {
+                color: var(--white);
+            }
+
+            h6 {
+                background: var(--white);
+            }
+        }
+
+        .resume-text {
+            p {
+                color: var(--white);
+            }
+        }
+    }
+}
+
+.resume-content {
+    @include flex__start;
+}
+
+.resume-icon {
+    i {
+        font-size: 50px;
+        color: var(--primary);
+        margin-right: 30px;
+        margin-top: 5px;
+        @include cursor__transition;
+    }
+}
+
+.resume-meta {
+    h4 {
+        font-size: 23px;
+        font-weight: 600;
+        margin-bottom: 5px;
+        @include cursor__transition;
+    }
+
+    h5 {
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+        @include cursor__transition;
+    }
+
+    h6 {
+        font-size: 15px;
+        font-weight: 500;
+        padding: 8px 20px;
+        border-radius: 30px;
+        display: inline-block;
+        text-transform: capitalize;
+        color: var(--primary);
+        background: rgba(216, 83, 43, 0.15);
+        margin-bottom: 20px;
+        @include cursor__transition;
+    }
+}
+
+
+// FOR RESPONSIVE STYLE
+@media (max-width: 575px) {
+    .resume-card {
+        padding: 35px 25px;
+    }
+    
+    .resume-content {
+        flex-direction: column;
+    }
+    
+    .resume-icon {
+        i {
+            margin: 0px 0px 20px 0px;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .resume-card {
+        padding: 35px 25px;
+    }
+    
+    .resume-content {
+        flex-direction: column;
+    }
+    
+    .resume-icon {
+        i {
+            margin: 0px 0px 20px 0px;
+        }
+    }
+}

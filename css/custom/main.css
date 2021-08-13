@@ -38,6 +38,13 @@ Themeforest Profile  :  https://themeforest.net/user/mironcoder
   outline: 0px;
 }
 
+.link
+{
+   color:#777777;
+   text-decoration: none; 
+   background-color: none;
+}
+
 img {
   vertical-align: middle;
 }

@@ -38,11 +38,20 @@ Themeforest Profile  :  https://themeforest.net/user/mironcoder
   outline: 0px;
 }
 
-.link
-{
-   color:#777777;
-   text-decoration: none; 
-   background-color: none;
+a:link {
+  color: #777777;
+}
+
+a:visited {
+  color: #777777;
+}
+
+a:hover {
+  color: #777777;
+}
+
+a:active {
+  color: #777777;
 }
 
 img {

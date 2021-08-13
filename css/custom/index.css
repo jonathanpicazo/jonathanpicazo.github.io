@@ -278,7 +278,7 @@
   display: inline-block;
   text-transform: capitalize;
   color: var(--primary);
-  background: rgba(216, 83, 43, 0.15);
+  background: #9ca1fd;
   margin-bottom: 20px;
   transition: all linear .3s;
   -webkit-transition: all linear .3s;

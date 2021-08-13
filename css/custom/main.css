@@ -67,6 +67,10 @@ a:hover {
   text-decoration: none;
 }
 
+a.btn-inline {
+  color:#ffffff
+}
+
 ul,
 ol {
   list-style: none;

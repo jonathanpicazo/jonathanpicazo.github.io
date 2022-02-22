@@ -94,7 +94,7 @@ button:focus {
 
 html,
 body {
-  scroll-behavior: smooth;
+  --scroll-behavior: smooth;
 }
 
 body {

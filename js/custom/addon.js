@@ -11,6 +11,7 @@ function toggleTheme(evt) {
     document.body.classList.remove('dark-mode')
   }
   else {
+    
     document.body.classList.add('dark-mode')
   }
 }

@@ -232,7 +232,9 @@ h6 {
 .dark-mode .section-heading p span,
 .dark-mode .icon-inline, 
 .dark-mode .navbar-item.active .navbar-link,
-.dark-mode .navbar-item .navbar-link:hover {
+.dark-mode .navbar-item .navbar-link:hover,
+.dark-mode .skills-card:hover,
+.dark-mode .resume-card:hover {
   color: var(--dark-mode-secondary);
 }
 .dark-mode .icon-inline i {

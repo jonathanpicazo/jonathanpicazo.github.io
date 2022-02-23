@@ -26,6 +26,7 @@ if (btns) {
   });
 }
 
+// show section and scroll to it
 function scrollPop(evt) {
   let target = evt.currentTarget
   let associatedBtn = document.getElementById(target.id + '-btn')

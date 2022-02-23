@@ -61,12 +61,14 @@ $(".cate-btn").on("click", function(){
 
 // FOR RESUME CATEGORY ACTIVE CONTENT
 function filter(active) {
+    console.log(active)
     hide = document.getElementsByClassName('cate-active');
     for (i = 0; i < hide.length; i++) {
       hide[i].style.display = 'none';
     }
   
     let show = document.getElementsByClassName(active);
+    console.log(show)
     for (i = 0; i < hide.length; i++) {
       show[i].style.display = 'block';
     }

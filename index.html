@@ -1,808 +1,818 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!--=====================================
-                    META-TAG PART START
-        =======================================-->
-        <!-- REQUIRE META -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!--=====================================
-                    META-TAG PART END
-        =======================================-->
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Jonathan Picazo</title>
+  <link rel="icon" href="images/favicon.png">
 
-        <!-- FOR WEBPAGE TITLE -->
-        <title>My Portfolio</title>
+  <!-- FOR FLATICON -->
+  <link rel="stylesheet" href="fonts/flaticon/flaticon.css">
 
-        <!--=====================================
-                    CSS LINK PART START
-        =======================================-->
-        <!-- FOR FAVICON -->
-        <link rel="icon" href="images/favicon.png">
+  <!-- FOR FONT AWESOME -->
+  <link rel="stylesheet" href="fonts/font-awesome/fontawesome.css">
 
-        <!-- FOR FLATICON -->
-        <link rel="stylesheet" href="fonts/flaticon/flaticon.css">
+  <!-- FOR SLICK SLIDER -->
+  <link rel="stylesheet" href="css/vendor/slick.min.css">
 
-        <!-- FOR FONT AWESOME -->
-        <link rel="stylesheet" href="fonts/font-awesome/fontawesome.css">
+  <!-- FOR BOOTSTRAP -->
+  <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
 
-        <!-- FOR SLICK SLIDER -->
-        <link rel="stylesheet" href="css/vendor/slick.min.css">
+  <!-- FOR GLOBAL STYLE -->
+  <link rel="stylesheet" href="css/custom/main.css">
 
-        <!-- FOR BOOTSTRAP -->
-        <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+  <!-- FOR INDEX PAGE -->
+  <link rel="stylesheet" href="css/custom/index.css">
+  </head>
+  <body>
 
-        <!-- FOR GLOBAL STYLE -->
-        <link rel="stylesheet" href="css/custom/main.css">
+  <!--=====================================
+    SCROLL TO TOP BUTTON
+  =======================================-->
+  <a class="back2top-btn" href="#">
+  <i class="fas fa-long-arrow-alt-up"></i>
+  </a>
 
-        <!-- FOR INDEX PAGE -->
-        <link rel="stylesheet" href="css/custom/index.css">
-        <!--=====================================
-                    CSS LINK PART END
-        =======================================-->
-    </head>
-    <body>
-        <!--=====================================
-                BACK2TOP BUTTON PART START
-        =======================================-->
-        <a class="back2top-btn" href="#">
-            <i class="fas fa-long-arrow-alt-up"></i>
-        </a>
-        <!--=====================================
-                BACK2TOP BUTTON PART END
-        =======================================-->
+  <!--=====================================
+          NAVBAR PART START
+    =======================================-->
+    <nav class="navbar-part">
+      <div class="container">
+        <div class="navbar-content">
+          <a class="navbar-logo" href="index.html"><img src="images/pfp.jpeg" alt="logo"></a>
+          <button class="navbar-toggle" type="button"><i class="fas fa-bars"></i></button>
 
-        <!--=====================================
-                    BANNER PART START
-        =======================================-->
-        <section class="banner-part">
-            <div class="banner-bg">
-                <div class="container">
-                    <img class="circle-shape" src="images/assets/circle.png" alt="circle">
-                    <img class="star-shape" src="images/assets/star.png" alt="star">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6">
-                            <div class="banner-img">
-                                <img src="images/banner/progart.png" alt="hero">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <div class="banner-content">
-                                <ul class="banner-icon">
-                                    <!-- <li><a class="icon icon-inline" href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a class="icon icon-inline" href="#"><i class="fab fa-twitter"></i></a></li> -->
-                                    <li><a class="icon icon-inline" href="https://www.linkedin.com/in/jonathan-picazo-709362195" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                                    <li><a class="icon icon-inline" href="https://github.com/jonathanpicazo" target="_blank"><i class="fab fa-github"></i></a></li>
-                                    <!-- <li><a class="icon icon-inline" href="#"><i class="fab fa-instagram"></i></a></li>
-                                    <li><a class="icon icon-inline" href="#"><i class="fab fa-dribbble"></i></a></li> -->
-                                </ul>
-                                <div class="banner-text">
-                                    <h1>Welcome to my portfolio!</h1>
-                                    <p>I am fresh graduate who is eager to land their first full-time engineering career. Explore through my webpage to view my projects and more.</p>
-                                </div>
-                                <!-- <div class="banner-btn duel-btn">
-                                    <a class="btn btn-inline" href="resume.html">
-                                        <i class="fas fa-arrows-alt"></i>
-                                        <span>know more</span>
-                                    </a>
-                                    <a class="btn btn-inline" href="portfolio-list.html">
-                                        <i class="fas fa-boxes"></i>
-                                        <span>demo work</span>
-                                    </a>
-                                </div> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--=====================================
-                    BANNER PART END
-        =======================================-->
+          <div class="navbar-slide">
+            <a class="navbar-cross" href="#"><i class="fas fa-times"></i></a>
+
+            <ul class="navbar-list">
+              <li class="navbar-item"><a class="navbar-link" href="#top">Home</a></li>
+              <li class="navbar-item"><a class="navbar-link scroll-to" href="#btn-section" id="about">About</a></li>
+              <li class="navbar-item"><a class="navbar-link scroll-to" href="#btn-section" id="experience">Experience</a></li>
+              <li class="navbar-item"><a class="navbar-link scroll-to" href="#btn-section" id="education">Education</a></li>
+              <li class="navbar-item"><a class="navbar-link" href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="theme-icon">
+            <a id="theme-toggle"><i class="fas fa-moon"></i></a>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+    <!--=====================================
+          NAVBAR PART END
+    =======================================-->
+
+  <!--=====================================
+    BANNER PART START
+  =======================================-->
+  <section class="banner-part">
+  <div class="banner-bg">
+  <div class="container">
+    <img class="circle-shape" src="images/assets/circle.png" alt="circle">
+    <img class="star-shape" src="images/assets/star.png" alt="star">
+    <div class="row">
+    <div class="col-lg-6 col-md-6">
+      <div class="banner-img">
+        <img src="images/banner/progart.png" alt="hero">
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-6">
+    <div class="banner-content">
+      <ul class="banner-icon">
+      <li><a class="icon icon-inline" href="https://www.linkedin.com/in/jonathan-picazo-709362195" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+      <li><a class="icon icon-inline" href="https://github.com/jonathanpicazo" target="_blank"><i class="fab fa-github"></i></a></li>
+      </ul>
+      <div class="banner-text">
+      <h1>Welcome to my portfolio!</h1>
+      <p>I am a developer who loves automation, web development, UI development and learning new things.</p>
+      </div>
+    </div>
+    </div>
+    </div>
+  </div>
+  </div>
+  </section>
+  <!--=====================================
+    BANNER PART END
+  =======================================-->
 
 
-        <!--=====================================
-                    RESUME PART START
-        =======================================-->
-        <section class="section resume-part">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-heading">
-                            <p>my <span>resume</span></p>
-                            <h2>Some basic information about myself</h2>
-                            <h4>Click on each to learn more</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <ul class="resume-cate-btn">
-                            <li>
-                                <button class="cate-btn active" onclick="filter('about-part')">
-                                    <i class="fas fa-user"></i>
-                                    <span>about me</span>
-                                </button>
-                            </li>
-                            <li>
-                                <button class="cate-btn" onclick="filter('exper-part')">
-                                    <i class="fas fa-user-tie"></i>
-                                    <span>experience</span>
-                                </button>
-                            </li>
-                            <li>
-                                <button class="cate-btn" onclick="filter('edu-part')">
-                                    <i class="fas fa-user-graduate"></i>
-                                    <span>education</span>
-                                </button>
-                            </li>
-                            <!-- <li>
-                                <button class="cate-btn" onclick="filter('refer-part')">
-                                    <i class="fas fa-users"></i>
-                                    <span>reference</span>
-                                </button>
-                            </li> -->
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--=====================================
-                    RESUME PART END
-        =======================================-->
+  <!--=====================================
+    RESUME PART START
+  =======================================-->
+  <section class="resume-part" id="btn-section">
+  <div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+    <div class="section-heading">
+    <p>my <span>resume</span></p>
+    <h4>Click on each to learn more</h4>
+    </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+    <ul class="resume-cate-btn">
+    <li>
+    <button class="cate-btn active" onclick="filter('about-part')" id="about-btn">
+      <i class="fas fa-user"></i>
+      <span>about me</span>
+    </button>
+    </li>
+    <li>
+    <button class="cate-btn" onclick="filter('exper-part')" id="experience-btn">
+      <i class="fas fa-user-tie"></i>
+      <span>experience</span>
+    </button>
+    </li>
+    <li>
+    <button class="cate-btn" onclick="filter('edu-part')" id="education-btn">
+      <i class="fas fa-user-graduate"></i>
+      <span>education</span>
+    </button>
+    </li>
+    </ul>
+    </div>
+  </div>
+  </div>
+  </section>
+  <!--=====================================
+    RESUME PART END
+  =======================================-->
 
 
-        <!--=====================================
-                    ABOUT PART START
-        =======================================-->
-        <section class="section about-part cate-active">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-7">
-                        <div class="about-summery">
-                            <h3>I'm Jonathan Picazo</h3>
-                            <p>My broad technical skill set is accompanied by an acute attention to detail and goal-oriented attitude. I hold experience in leading group projects, and both front and back-end development. I am tech-savvy, always keeping up-to-date with the most modern technology. My goal is to gain experience in software engineering and the information technology field in order to become a DevOps engineer.</p>
-                        </div>
-                        <div class="about-list">
-                            <ul>
-                                <li>
-                                    <h6>Birthday:</h6>
-                                    <p>February 27, 1999</p>
-                                </li>
-                                <li>
-                                    <h6>Lives in:</h6>
-                                    <p>Pomona, California</p>
-                                </li>
-                                <li>
-                                    <h6>Website:</h6>
-                                    <p>https://jonathanpicazo.github.io/</p>
-                                </li>
-                            </ul>
-                            <ul>
-                                <li>
-                                    <h6>Phone:</h6>
-                                    <p>(+1) 9097848797</p>
-                                </li>
-                                <li>
-                                    <h6>GitHub:</h6>
-                                    <p>jonathanpicazo</p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="about-btn duel-btn">
-                            <a class="btn btn-inline" href="images/picazo_cv.pdf" download>
-                                <i class="fas fa-download"></i>
-                                <span>Download CV</span>
-                            </a>
-                            <!-- <a class="btn btn-inline" href="contact.html">
-                                <i class="fas fa-headset"></i>
-                                <span>contact me</span>
-                            </a> -->
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="about-img">
-                            <img src="images/banner/about.png" alt="about">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--=====================================
-                    ABOUT PART END
-        =======================================-->
+  <!--=====================================
+    ABOUT PART START
+  =======================================-->
+  <section class="about-part cate-active">
+  <div class="container">
+  <div class="row">
+    <div class="col-lg-7">
+    <div class="about-summery">
+    <h3>I'm Jonathan Picazo</h3>
+    <p>My broad technical skill set is accompanied by an acute attention to detail and goal-oriented attitude. I hold experience in leading group projects, and both front and back-end development. I am tech-savvy, always keeping up-to-date with the newest technology.</p>
+    </div>
+    <div class="about-list">
+    <ul>
+    <li>
+      <h6>Birthday:</h6>
+      <p>February 27, 1999</p>
+    </li>
+    <li>
+      <h6>Lives in:</h6>
+      <p>Pomona, California</p>
+    </li>
+    </ul>
+    <ul>
+    <li>
+      <h6>Phone:</h6>
+      <p>(+1) 9097848797</p>
+    </li>
+    <li>
+      <h6>GitHub:</h6>
+      <p>jonathanpicazo</p>
+    </li>
+    </ul>
+    </div>
+    <div class="about-btn duel-btn">
+    <a class="btn btn-inline" href="images/picazo_cv.pdf" download>
+    <i class="fas fa-download"></i>
+    <span>Download CV</span>
+    </a>
+    </div>
+    </div>
+    <div class="col-lg-5">
+    <div class="about-img">
+    <img src="images/banner/about.png" alt="about">
+    </div>
+    </div>
+  </div>
+  </div>
+  </section>
+  <!--=====================================
+    ABOUT PART END
+  =======================================-->
 
 
-        <!--=====================================
-                    EXPERIENCE PART START
-        =======================================-->
-        <section class="section exper-part cate-active">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-lg-6">
-                        <div class="resume-card">
-                            <div class="resume-content">
-                                <div class="resume-icon">
-                                    <i class="fas fa-award"></i>
-                                </div>
-                                <div class="resume-meta">
-                                    <h4>Web Development Intern</h4>
-                                    <h5>Suavecito Inc.</h5>
-                                    <h6>Sept 2021 - present</h6>
-                                </div>
-                            </div>
-                            <div class="resume-text">
-                                <p>Work with Shopify's language liquid, along with html/css/js for the company's website.</p>
-                                <p>Create custom email templates for promotional offers.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6">
-                        <div class="resume-card">
-                            <div class="resume-content">
-                                <div class="resume-icon">
-                                    <i class="fas fa-award"></i>
-                                </div>
-                                <div class="resume-meta">
-                                    <h4>Programming Tutor</h4>
-                                    <h5>Self-Employed</h5>
-                                    <h6>Sept 2018 - Sept 2020</h6>
-                                </div>
-                            </div>
-                            <div class="resume-text">
-                                <p>Tutored object oriented programming in C++.</p>
-                                <p>Taught clients the fundamentals of programming, useful C++ libraries, and supported data types such as vectors.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6">
-                        <div class="resume-card">
-                            <div class="resume-content">
-                                <div class="resume-icon">
-                                    <i class="fas fa-award"></i>
-                                </div>
-                                <div class="resume-meta">
-                                    <h4>Retail Associate</h4>
-                                    <h5>Panera Bread</h5>
-                                    <h6>Oct 2019 - July 2020</h6>
-                                </div>
-                            </div>
-                            <div class="resume-text">
-                                <p>I worked as an associate for Panera Bread, this job helped me get accustomed to working in a team environment.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6">
-                        <div class="resume-card">
-                            <div class="resume-content">
-                                <div class="resume-icon">
-                                    <i class="fas fa-award"></i>
-                                </div>
-                                <div class="resume-meta">
-                                    <h4>Cook</h4>
-                                    <h5>Carl's Jr</h5>
-                                    <h6>July 2018 - May 2019</h6>
-                                </div>
-                            </div>
-                            <div class="resume-text">
-                                <p>I worked as a back-of-house cook for closing shift. This was my first official job.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--=====================================
-                    EXPERIENCE PART END
-        =======================================-->
+  <!--=====================================
+    EXPERIENCE PART START
+  =======================================-->
+  <section class="exper-part cate-active">
+  <div class="container">
+  <div class="row">
+    <div class="col-md-6 col-lg-6">
+    <div class="resume-card">
+      <div class="resume-content">
+      <div class="resume-icon">
+      <i class="fas fa-solid fa-briefcase"></i>
+      </div>
+      <div class="resume-meta">
+      <h4>Web Developer</h4>
+      <h5>Suavecito Inc.</h5>
+      <h6>Jan 2021 - Present</h6>
+      </div>
+      </div>
+      <div class="resume-text">
+      <p>Implemented features on top of shopify themes. Created node apps to automate tagging and typing for shopify products using GraphQL. Created email templates for promotions using tables.</p>
+      <p>Create custom email templates for promotional offers.</p>
+      </div>
+    </div>
+    </div>
+    <div class="col-md-6 col-lg-6">
+    <div class="resume-card">
+    <div class="resume-content">
+    <div class="resume-icon">
+      <i class="fas fa-award"></i>
+    </div>
+    <div class="resume-meta">
+      <h4>Web Development Intern</h4>
+      <h5>Suavecito Inc.</h5>
+      <h6>Sept 2021 - Jan 2021</h6>
+    </div>
+    </div>
+    <div class="resume-text">
+    <p>Work with Shopify's language liquid, along with html/css/js for the company's website.</p>
+    <p>Create custom email templates for promotional offers.</p>
+    </div>
+    </div>
+    </div>
+    <div class="col-md-6 col-lg-6">
+    <div class="resume-card">
+    <div class="resume-content">
+    <div class="resume-icon">
+      <i class="fas fa-award"></i>
+    </div>
+    <div class="resume-meta">
+      <h4>Programming Tutor</h4>
+      <h5>Self-Employed</h5>
+      <h6>Sept 2018 - Sept 2020</h6>
+    </div>
+    </div>
+    <div class="resume-text">
+    <p>Tutored object oriented programming in C++.</p>
+    <p>Taught clients the fundamentals of programming, useful C++ libraries, and supported data types such as vectors.</p>
+    </div>
+    </div>
+    </div>
+    <div class="col-md-6 col-lg-6">
+    <div class="resume-card">
+    <div class="resume-content">
+    <div class="resume-icon">
+      <i class="fas fa-award"></i>
+    </div>
+    <div class="resume-meta">
+      <h4>Retail Associate</h4>
+      <h5>Panera Bread</h5>
+      <h6>Oct 2019 - July 2020</h6>
+    </div>
+    </div>
+    <div class="resume-text">
+    <p>I worked as an associate for Panera Bread, this job helped me get accustomed to working in a team environment.</p>
+    </div>
+    </div>
+    </div>
+    <div class="col-md-6 col-lg-6">
+    <div class="resume-card">
+    <div class="resume-content">
+    <div class="resume-icon">
+      <i class="fas fa-award"></i>
+    </div>
+    <div class="resume-meta">
+      <h4>Cook</h4>
+      <h5>Carl's Jr</h5>
+      <h6>July 2018 - May 2019</h6>
+    </div>
+    </div>
+    <div class="resume-text">
+    <p>I worked as a back-of-house cook for closing shift. This was my first official job.</p>
+    </div>
+    </div>
+    </div>
+  </div>
+  </div>
+  </section>
+  <!--=====================================
+    EXPERIENCE PART END
+  =======================================-->
 
 
-        <!--=====================================
-                    EDUCATION PART START
-        =======================================-->
-        <section class="section edu-part cate-active">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-lg-6">
-                        <div class="resume-card">
-                            <div class="resume-content">
-                                <div class="resume-icon">
-                                    <i class="fas fa-graduation-cap"></i>
-                                </div>
-                                <div class="resume-meta">
-                                    <h4>B.S in Computer Science</h4>
-                                    <h5>University of California, Riverside</h5>
-                                    <h6>Sept 2017 - Jun 2021</h6>
-                                </div>
-                            </div>
-                            <div class="resume-text">
-                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Quibusdam possimus vero explicabo quas numquam harum voluptas itaque error et perspiciatis eos fuga.</p> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6">
-                        <div class="resume-card">
-                            <div class="resume-content">
-                                <div class="resume-icon">
-                                    <i class="fas fa-graduation-cap"></i>
-                                </div>
-                                <div class="resume-meta">
-                                    <h4>High School Degree</h4>
-                                    <h5>Diamond Ranch High School</h5>
-                                    <h6>Aug 2013 - Jun 2017</h6>
-                                </div>
-                            </div>
-                            <div class="resume-text">
-                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Quibusdam possimus vero explicabo quas numquam harum voluptas itaque error et perspiciatis eos fuga.</p> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--=====================================
-                    EDUCATION PART END
-        =======================================-->
+  <!--=====================================
+    EDUCATION PART START
+  =======================================-->
+  <section class="edu-part cate-active">
+  <div class="container">
+  <div class="row">
+    <div class="col-md-6 col-lg-6">
+    <div class="resume-card">
+    <div class="resume-content">
+    <div class="resume-icon">
+      <i class="fas fa-graduation-cap"></i>
+    </div>
+    <div class="resume-meta">
+      <h4>B.S in Computer Science</h4>
+      <h5>University of California, Riverside</h5>
+      <h6>Sept 2017 - Jun 2021</h6>
+    </div>
+    </div>
+    <div class="resume-text">
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Quibusdam possimus vero explicabo quas numquam harum voluptas itaque error et perspiciatis eos fuga.</p> -->
+    </div>
+    </div>
+    </div>
+    <div class="col-md-6 col-lg-6">
+    <div class="resume-card">
+    <div class="resume-content">
+    <div class="resume-icon">
+      <i class="fas fa-graduation-cap"></i>
+    </div>
+    <div class="resume-meta">
+      <h4>High School Degree</h4>
+      <h5>Diamond Ranch High School</h5>
+      <h6>Aug 2013 - Jun 2017</h6>
+    </div>
+    </div>
+    <div class="resume-text">
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Quibusdam possimus vero explicabo quas numquam harum voluptas itaque error et perspiciatis eos fuga.</p> -->
+    </div>
+    </div>
+    </div>
+  </div>
+  </div>
+  </section>
+  <!--=====================================
+    EDUCATION PART END
+  =======================================-->
 
 
-        <!--=====================================
-                    NOTABLE PART START
-        =======================================-->
+  <!--=====================================
+    NOTABLE PART START
+  =======================================-->
 
-        <section class="section edu-part1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-heading">
-                            <p>my <span>notable projects</span></p>
-                            <h2>Click on each to learn more</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <a href="https://github.com/jonathanpicazo/NBA-Stats-React" target="_blank">
-                    <div class="col-md-6 col-lg-6">
-                        <div class="resume-card">
-                            <div class="resume-content">
-                                <div class="resume-icon">
-                                    <i class="fab fa-react"></i>
-                                </div>
-                                <div class="resume-meta">
-                                    <h4>Basketball Stats Leaderboard Search</h4>
-                                    <h5>Web Development</h5>
-                                    <h6>React</h6>
-                                    <h6>Python(Flask)</h6>
-                                </div>
-                            </div>
-                            <div class="resume-text">
-                                <h
-                                <p>The web application uses an existing NBA statistics database from Kaggle to perform search queries. This application is essentially a search application for specific NBA statistics (best home team, best shooter, etc.). This project made me comfortable with having a backend communicate with the frontend.</p>
-                            </div>
-                        </div>
-                    </a>
-                    </div>
-                    <div class="col-md-6 col-lg-6">
-                        <a href="https://github.com/jonathanpicazo/LED-Pong" target="_blank">
-                        <div class="resume-card">
-                            <div class="resume-content">
-                                <div class="resume-icon">
-                                    <i class="fas fa-microchip"></i>
-                                </div>
-                                <div class="resume-meta">
-                                    <h4>LED Pong</h4>
-                                    <h5>Embedded Systems</h5>
-                                    <h6>C</h6>
-                                </div>
-                            </div>
-                            <div class="resume-text">
-                                <p>I recreated Pong on a breadboard with an ATMega1284. The game is displayed on a 8x8 LED Matrix. There are two buttons for each player to control the paddle. I used avr-gdb for debugging purposes.</p>
-                            </div>
-                        </div>
-                    </a>
-                    </div>
-                    <div class="col-md-6 col-lg-6">
-                        <a href="https://github.com/MarcJimenez99/BasketballCrawler" target="_blank">
-                        <div class="resume-card">
-                            <div class="resume-content">
-                                <div class="resume-icon">
-                                    <i class="fas fa-spider"></i>
-                                </div>
-                                <div class="resume-meta">
-                                    <h4>Basketball Crawler</h4>
-                                    <h5>Information Retrieval, Web Development</h5>
-                                    <h6>React</h6>
-                                    <h6>Python</h6>
-                                    <h6>ElasticSearch</h6>
-                                </div>
-                            </div>
-                            <div class="resume-text">
-                                <p>This project includes a web crawler, indexer, and a web application extension. The crawler is built with Python and the BeautifulSoup library. The indexer is built with ElasticSearch, and the web application is built with React and Flask. The project crawls through basketballreference.com and indexes the contents with ElasticSearch. The web application is used as a search bar to search the index.</p>
-                            </div>
-                        </div>
-                    </a>
-                    </div>
-                    <div class="col-md-6 col-lg-6">
-                        <a href="https://github.com/jonathanpicazo/xv6-riscv" target="_blank">
-                        <div class="resume-card">
-                            <div class="resume-content">
-                                <div class="resume-icon">
-                                    <i class="fas fa-edit"></i>
-                                </div>
-                                <div class="resume-meta">
-                                    <h4>xv6-riscv Edit</h4>
-                                    <h5>Operating Systems</h5>
-                                    <h6>C</h6>
-                                </div>
-                            </div>
-                            <div class="resume-text">
-                                <p>I made edits to the xv6 risc-v operating system. This project taught me how make edits and work with pre-existing code. Some of the edits made were adding system calls, changing the file system, and modifying memory allocation.</p>
-                            </div>
-                        </div>
-                    </a> 
-                    </div>
-                    <div class="col-md-6 col-lg-6">
-                        <a href="https://github.com/jonathanpicazo/Hospital-Database-PostgreSQL" target="_blank">
-                        <div class="resume-card">
-                            <div class="resume-content">
-                                <div class="resume-icon">
-                                    <i class="fas fa-database"></i>
-                                </div>
-                                <div class="resume-meta">
-                                    <h4>Hospital SQL</h4>
-                                    <h5>Databases</h5>
-                                    <h6>PostgreSQL</h6>
-                                    <h6>Java</h6>
-                                </div>
-                            </div>
-                            <div class="resume-text">
-                                <p>For this project, we had to implement a Java CLI GUI, and have it interact with our PostgreSQL Database. Some of the operations this project can perform are add doctor, add patient, list all available appointments of a given department etc. This project helped me understand SQL and how to have it communicate with a GUI interface.</p>
-                            </div>
-                        </div>
-                    </a> 
-                    </div>
-                    <div class="col-md-6 col-lg-6">
-                        <a href="https://github.com/jonathanpicazo/bash-rshell" target="_blank">
-                        <div class="resume-card">
-                            <div class="resume-content">
-                                <div class="resume-icon">
-                                    <i class="fas fa-terminal"></i>
-                                </div>
-                                <div class="resume-meta">
-                                    <h4>R-Shell</h4>
-                                    <h5>Object-oriented Programming</h5>
-                                    <h6>C++</h6>
-                                </div>
-                            </div>
-                            <div class="resume-text">
-                                <p>This was my first big programming project in college. The goal was to build a cli shell that is able to execute bash commands. The program supports redirection, piping, and multiple commands with the use of paranthesis and boolean operators. This project helped me learn inheritance and polymorphism. It also taught me how to unit test using Google's testing library.</p>
-                            </div>
-                        </div>
-                    </a> 
-                    </div>
-                    <div class="col-md-6 col-lg-6">
-                        <a href="https://github.com/jonathanpicazo/MD5-Crypt" target="_blank">
-                        <div class="resume-card">
-                            <div class="resume-content">
-                                <div class="resume-icon">
-                                    <i class="fas fa-key"></i>
-                                </div>
-                                <div class="resume-meta">
-                                    <h4>MD5 Crypt</h4>
-                                    <h5>Cybersecurity</h5>
-                                    <h6>Python</h6>
-                                </div>
-                            </div>
-                            <div class="resume-text">
-                                <p>Although this was a relatively short project, it is one of my favorites because of the end reward. For this project, I cracked a 6 character password given a hash and salt.The average throughput of the password cracking was roughly 1050 passwords a second, as it is a single threaded program. I am planning on optimizing it by adding multi-threaded support.</p>
-                            </div>
-                        </div>
-                    </a> 
-                    </div>
-                    <div class="col-md-6 col-lg-6">
-                        <a href="https://github.com/jonathanpicazo/Skew-Suffix-Array" target="_blank">
-                        <div class="resume-card">
-                            <div class="resume-content">
-                                <div class="resume-icon">
-                                    <i class="fas fa-flask"></i>
-                                </div>
-                                <div class="resume-meta">
-                                    <h4>Skew Suffix Array Algorithm</h4>
-                                    <h5>Bioinformatics</h5>
-                                    <h6>Python</h6>
-                                </div>
-                            </div>
-                            <div class="resume-text">
-                                <p>The goal of this project was to implement the skew suffix array algorithm in Python. Although the algorithm is not efficient with short sequences, it is more efficient than the normal suffix array algorithm once the sequence size surpasses the million range. This project helped me understand how to convert notes and diagrams to code. It also made me really comfortable at working with python dictionaries.</p>
-                            </div>
-                        </div>
-                    </a> 
-                    </div>
-                </div>
-            </div>
-        </section>
+  <section class="section edu-part1">
+  <div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+    <div class="section-heading">
+    <p>my <span>notable projects</span></p>
+    <h2>Click on each to learn more</h2>
+    </div>
+    </div>
+  </div>
+  <div class="row">
+    <a href="https://github.com/jonathanpicazo/NBA-Stats-React" target="_blank">
+    <div class="col-md-6 col-lg-6">
+    <div class="resume-card">
+    <div class="resume-content">
+    <div class="resume-icon">
+      <i class="fab fa-react"></i>
+    </div>
+    <div class="resume-meta">
+      <h4>Basketball Stats Leaderboard Search</h4>
+      <h5>Web Development</h5>
+      <h6>React</h6>
+      <h6>Python(Flask)</h6>
+    </div>
+    </div>
+    <div class="resume-text">
+    <p>The web application uses an existing NBA statistics database from Kaggle to perform search queries. This application is essentially a search application for specific NBA statistics (best home team, best shooter, etc.). This project made me comfortable with having a backend communicate with the frontend.</p>
+    </div>
+    </div>
+    </a>
+    </div>
+    <div class="col-md-6 col-lg-6">
+    <a href="https://github.com/jonathanpicazo/LED-Pong" target="_blank">
+    <div class="resume-card">
+    <div class="resume-content">
+    <div class="resume-icon">
+      <i class="fas fa-microchip"></i>
+    </div>
+    <div class="resume-meta">
+      <h4>LED Pong</h4>
+      <h5>Embedded Systems</h5>
+      <h6>C</h6>
+    </div>
+    </div>
+    <div class="resume-text">
+    <p>I recreated Pong on a breadboard with an ATMega1284. The game is displayed on a 8x8 LED Matrix. There are two buttons for each player to control the paddle. I used avr-gdb for debugging purposes.</p>
+    </div>
+    </div>
+    </a>
+    </div>
+    <div class="col-md-6 col-lg-6">
+    <a href="https://github.com/MarcJimenez99/BasketballCrawler" target="_blank">
+    <div class="resume-card">
+    <div class="resume-content">
+    <div class="resume-icon">
+      <i class="fas fa-spider"></i>
+    </div>
+    <div class="resume-meta">
+      <h4>Basketball Crawler</h4>
+      <h5>Information Retrieval, Web Development</h5>
+      <h6>React</h6>
+      <h6>Python</h6>
+      <h6>ElasticSearch</h6>
+    </div>
+    </div>
+    <div class="resume-text">
+    <p>This project includes a web crawler, indexer, and a web application extension. The crawler is built with Python and the BeautifulSoup library. The indexer is built with ElasticSearch, and the web application is built with React and Flask. The project crawls through basketballreference.com and indexes the contents with ElasticSearch. The web application is used as a search bar to search the index.</p>
+    </div>
+    </div>
+    </a>
+    </div>
+    <div class="col-md-6 col-lg-6">
+    <a href="https://github.com/jonathanpicazo/xv6-riscv" target="_blank">
+    <div class="resume-card">
+    <div class="resume-content">
+    <div class="resume-icon">
+      <i class="fas fa-edit"></i>
+    </div>
+    <div class="resume-meta">
+      <h4>xv6-riscv Edit</h4>
+      <h5>Operating Systems</h5>
+      <h6>C</h6>
+    </div>
+    </div>
+    <div class="resume-text">
+    <p>I made edits to the xv6 risc-v operating system. This project taught me how make edits and work with pre-existing code. Some of the edits made were adding system calls, changing the file system, and modifying memory allocation.</p>
+    </div>
+    </div>
+    </a> 
+    </div>
+    <div class="col-md-6 col-lg-6">
+    <a href="https://github.com/jonathanpicazo/Hospital-Database-PostgreSQL" target="_blank">
+    <div class="resume-card">
+    <div class="resume-content">
+    <div class="resume-icon">
+      <i class="fas fa-database"></i>
+    </div>
+    <div class="resume-meta">
+      <h4>Hospital SQL</h4>
+      <h5>Databases</h5>
+      <h6>PostgreSQL</h6>
+      <h6>Java</h6>
+    </div>
+    </div>
+    <div class="resume-text">
+    <p>For this project, we had to implement a Java CLI GUI, and have it interact with our PostgreSQL Database. Some of the operations this project can perform are add doctor, add patient, list all available appointments of a given department etc. This project helped me understand SQL and how to have it communicate with a GUI interface.</p>
+    </div>
+    </div>
+    </a> 
+    </div>
+    <div class="col-md-6 col-lg-6">
+    <a href="https://github.com/jonathanpicazo/bash-rshell" target="_blank">
+    <div class="resume-card">
+    <div class="resume-content">
+    <div class="resume-icon">
+      <i class="fas fa-terminal"></i>
+    </div>
+    <div class="resume-meta">
+      <h4>R-Shell</h4>
+      <h5>Object-oriented Programming</h5>
+      <h6>C++</h6>
+    </div>
+    </div>
+    <div class="resume-text">
+    <p>This was my first big programming project in college. The goal was to build a cli shell that is able to execute bash commands. The program supports redirection, piping, and multiple commands with the use of paranthesis and boolean operators. This project helped me learn inheritance and polymorphism. It also taught me how to unit test using Google's testing library.</p>
+    </div>
+    </div>
+    </a> 
+    </div>
+    <div class="col-md-6 col-lg-6">
+    <a href="https://github.com/jonathanpicazo/MD5-Crypt" target="_blank">
+    <div class="resume-card">
+    <div class="resume-content">
+    <div class="resume-icon">
+      <i class="fas fa-key"></i>
+    </div>
+    <div class="resume-meta">
+      <h4>MD5 Crypt</h4>
+      <h5>Cybersecurity</h5>
+      <h6>Python</h6>
+    </div>
+    </div>
+    <div class="resume-text">
+    <p>Although this was a relatively short project, it is one of my favorites because of the end reward. For this project, I cracked a 6 character password given a hash and salt.The average throughput of the password cracking was roughly 1050 passwords a second, as it is a single threaded program. I am planning on optimizing it by adding multi-threaded support.</p>
+    </div>
+    </div>
+    </a> 
+    </div>
+    <div class="col-md-6 col-lg-6">
+    <a href="https://github.com/jonathanpicazo/Skew-Suffix-Array" target="_blank">
+    <div class="resume-card">
+    <div class="resume-content">
+    <div class="resume-icon">
+      <i class="fas fa-flask"></i>
+    </div>
+    <div class="resume-meta">
+      <h4>Skew Suffix Array Algorithm</h4>
+      <h5>Bioinformatics</h5>
+      <h6>Python</h6>
+    </div>
+    </div>
+    <div class="resume-text">
+    <p>The goal of this project was to implement the skew suffix array algorithm in Python. Although the algorithm is not efficient with short sequences, it is more efficient than the normal suffix array algorithm once the sequence size surpasses the million range. This project helped me understand how to convert notes and diagrams to code. It also made me really comfortable at working with python dictionaries.</p>
+    </div>
+    </div>
+    </a> 
+    </div>
+  </div>
+  </div>
+  </section>
 
 
-        <!--=====================================
-                    NOTABLE PART END
-        =======================================-->
-        
+  <!--=====================================
+    NOTABLE PART END
+  =======================================-->
+  
 
-        <!--=====================================
-                    SKILLS PART START
-        =======================================-->
-        <section class="section skills-part">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-heading">
-                            <p>my <span>skills</span></p>
-                            <h2>Expert in these technologies</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row skills-parent">
-                    <div class="col-6 col-sm-4 col-lg-2">
-                        <div class="skills-card">
-                            <div class="skills-img">
-                                <img src="images/skill/html.png" alt="html">
-                            </div>
-                            <div class="skills-name">
-                                <p>html</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-4 col-lg-2">
-                        <div class="skills-card">
-                            <div class="skills-img">
-                                <img src="images/skill/css.png" alt="css">
-                            </div>
-                            <div class="skills-name">
-                                <p>css</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-4 col-lg-2">
-                        <div class="skills-card">
-                            <div class="skills-img">
-                                <img src="images/skill/javascript.png" alt="javascript">
-                            </div>
-                            <div class="skills-name">
-                                <p>javascript</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-4 col-lg-2">
-                        <div class="skills-card">
-                            <div class="skills-img">
-                                <img src="images/skill/react.png" alt="react">
-                            </div>
-                            <div class="skills-name">
-                                <p>react</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-4 col-lg-2">
-                        <div class="skills-card">
-                            <div class="skills-img">
-                                <img src="images/skill/nodejs.png" alt="nodejs">
-                            </div>
-                            <div class="skills-name">
-                                <p>nodejs</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-4 col-lg-2">
-                        <div class="skills-card">
-                            <div class="skills-img">
-                                <img src="images/skill/python.png" alt="python">
-                            </div>
-                            <div class="skills-name">
-                                <p>python</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-4 col-lg-2">
-                        <div class="skills-card">
-                            <div class="skills-img">
-                                <img src="images/skill/c.png" alt="c">
-                            </div>
-                            <div class="skills-name">
-                                <p>c</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-4 col-lg-2">
-                        <div class="skills-card">
-                            <div class="skills-img">
-                                <img src="images/skill/cplus.png" alt="c++">
-                            </div>
-                            <div class="skills-name">
-                                <p>c++</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-4 col-lg-2">
-                        <div class="skills-card">
-                            <div class="skills-img">
-                                <img src="images/skill/java.png" alt="java">
-                            </div>
-                            <div class="skills-name">
-                                <p>java</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-4 col-lg-2">
-                        <div class="skills-card">
-                            <div class="skills-img">
-                                <img src="images/skill/sql.png" alt="sql">
-                            </div>
-                            <div class="skills-name">
-                                <p>sql</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-4 col-lg-2">
-                        <div class="skills-card">
-                            <div class="skills-img">
-                                <img src="images/skill/linux.png" alt="linux">
-                            </div>
-                            <div class="skills-name">
-                                <p>linux</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-4 col-lg-2">
-                        <div class="skills-card">
-                            <div class="skills-img">
-                                <img src="images/skill/shopify.png" alt="shopify">
-                            </div>
-                            <div class="skills-name">
-                                <p>shopify</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--=====================================
-                    SKILLS PART END
-        =======================================-->
+  <!--=====================================
+    SKILLS PART START
+  =======================================-->
+  <section class="section skills-part">
+  <div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+    <div class="section-heading">
+    <p>my <span>skills</span></p>
+    <h2>Expert in these technologies</h2>
+    </div>
+    </div>
+  </div>
+  <div class="row skills-parent">
+    <div class="col-6 col-sm-4 col-lg-2">
+    <div class="skills-card">
+    <div class="skills-img">
+    <img src="images/skill/html.png" alt="html">
+    </div>
+    <div class="skills-name">
+    <p>html</p>
+    </div>
+    </div>
+    </div>
+    <div class="col-6 col-sm-4 col-lg-2">
+    <div class="skills-card">
+    <div class="skills-img">
+    <img src="images/skill/css.png" alt="css">
+    </div>
+    <div class="skills-name">
+    <p>css</p>
+    </div>
+    </div>
+    </div>
+    <div class="col-6 col-sm-4 col-lg-2">
+    <div class="skills-card">
+    <div class="skills-img">
+    <img src="images/skill/javascript.png" alt="javascript">
+    </div>
+    <div class="skills-name">
+    <p>javascript</p>
+    </div>
+    </div>
+    </div>
+    <div class="col-6 col-sm-4 col-lg-2">
+    <div class="skills-card">
+    <div class="skills-img">
+    <img src="images/skill/typescript.png" alt="linux">
+    </div>
+    <div class="skills-name">
+    <p>typescript</p>
+    </div>
+    </div>
+    </div>
+    <div class="col-6 col-sm-4 col-lg-2">
+    <div class="skills-card">
+    <div class="skills-img">
+    <img src="images/skill/react.png" alt="react">
+    </div>
+    <div class="skills-name">
+    <p>react</p>
+    </div>
+    </div>
+    </div>
+    <div class="col-6 col-sm-4 col-lg-2">
+    <div class="skills-card">
+    <div class="skills-img">
+    <img src="images/skill/nodejs.png" alt="nodejs">
+    </div>
+    <div class="skills-name">
+    <p>nodejs</p>
+    </div>
+    </div>
+    </div>
+    <div class="col-6 col-sm-4 col-lg-2">
+    <div class="skills-card">
+    <div class="skills-img">
+    <img src="images/skill/python.png" alt="python">
+    </div>
+    <div class="skills-name">
+    <p>python</p>
+    </div>
+    </div>
+    </div>
+    <div class="col-6 col-sm-4 col-lg-2">
+    <div class="skills-card">
+    <div class="skills-img">
+    <img src="images/skill/cplus.png" alt="c++">
+    </div>
+    <div class="skills-name">
+    <p>c++</p>
+    </div>
+    </div>
+    </div>
+    <div class="col-6 col-sm-4 col-lg-2">
+    <div class="skills-card">
+    <div class="skills-img">
+    <img src="images/skill/java.png" alt="java">
+    </div>
+    <div class="skills-name">
+    <p>java</p>
+    </div>
+    </div>
+    </div>
+    <div class="col-6 col-sm-4 col-lg-2">
+    <div class="skills-card">
+    <div class="skills-img">
+    <img src="images/skill/sql.png" alt="sql">
+    </div>
+    <div class="skills-name">
+    <p>sql</p>
+    </div>
+    </div>
+    </div>
+    <div class="col-6 col-sm-4 col-lg-2">
+    <div class="skills-card">
+    <div class="skills-img">
+    <img src="images/skill/shopify.png" alt="shopify">
+    </div>
+    <div class="skills-name">
+    <p>shopify</p>
+    </div>
+    </div>
+    </div>
+    <div class="col-6 col-sm-4 col-lg-2">
+    <div class="skills-card">
+    <div class="skills-img">
+    <img src="images/skill/graphql.png" alt="c">
+    </div>
+    <div class="skills-name">
+    <p>graphql</p>
+    </div>
+    </div>
+    </div>
+  </div>
+  </div>
+  </section>
+  <!--=====================================
+    SKILLS PART END
+  =======================================-->
 
-        <!--=====================================
-                    CONTACT PART START
-        =======================================-->
-        <section class="section contact-part">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-heading">
-                            <h2>Contact me</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mb-5">
-                    <div class="col-md-4 col-lg-4">
-                        <div class="contact-address">
-                            <div class="address-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div class="address-text">
-                                <h4>phone</h4>
-                                <p>(+1) (909)-784-8797</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-lg-4">
-                        <div class="contact-address">
-                            <div class="address-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="address-text">
-                                <h4>email</h4>
-                                <p>jonathanpicazo@outlook.com</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-lg-4">
-                        <div class="contact-address">
-                            <div class="address-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="address-text">
-                                <h4>location</h4>
-                                <p>Pomona, California, USA</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 col-lg-7">
-                        <form>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Name">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Email">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Subject">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <input type="file" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <textarea class="form-control" placeholder="Message"></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="form-btn">
-                                        <button class="btn btn-inline" type="submit">
-                                            <i class="fas fa-paper-plane"></i>
-                                            <span>send message</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-md-6 col-lg-5">
-                        <div class="contact-img">
-                            <img src="images/banner/contact.png" alt="contact">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--=====================================
-                    CONTACT PART END
-        =======================================-->
-        <!--=====================================
-                    FOOTER PART START
-        =======================================-->
-        <section class="section footer-part">
-            <!-- <div class="container">
-                <div class="row">
-                </div>
-            </div> -->
-        </section>
-        <!--=====================================
-                    FOOTER PART END
-        =======================================-->
-        
+  <!--=====================================
+    CONTACT PART START
+  =======================================-->
+  <section class="section contact-part" id="contact">
+  <div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+    <div class="section-heading">
+    <h2>Contact me</h2>
+    </div>
+    </div>
+  </div>
+  <div class="row mb-5">
+    <div class="col-md-4 col-lg-4">
+    <div class="contact-address">
+    <div class="address-icon">
+    <i class="fas fa-phone"></i>
+    </div>
+    <div class="address-text">
+    <h4>phone</h4>
+    <p>(+1) (909)-784-8797</p>
+    </div>
+    </div>
+    </div>
+    <div class="col-md-4 col-lg-4">
+    <div class="contact-address">
+    <div class="address-icon">
+    <i class="fas fa-envelope"></i>
+    </div>
+    <div class="address-text">
+    <h4>email</h4>
+    <p>jonathanpicazo@outlook.com</p>
+    </div>
+    </div>
+    </div>
+    <div class="col-md-4 col-lg-4">
+    <div class="contact-address">
+    <div class="address-icon">
+    <i class="fas fa-map-marker-alt"></i>
+    </div>
+    <div class="address-text">
+    <h4>location</h4>
+    <p>Pomona, California, USA</p>
+    </div>
+    </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 col-lg-7">
+    <form action="mailto:jonathanpicazo@outlook.com" method="get" enctype="text/plain">
+    <div class="row">
+    <div class="col-lg-6">
+      <div class="form-group">
+      <input type="text" class="form-control" placeholder="Name">
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="form-group">
+      <input type="email" class="form-control" placeholder="Email">
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="form-group">
+      <input type="text" class="form-control" placeholder="Subject">
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="form-group">
+      <input type="file" class="form-control">
+      </div>
+    </div>
+    <div class="col-lg-12">
+      <div class="form-group">
+      <textarea class="form-control" placeholder="Message"></textarea>
+      </div>
+    </div>
+    <div class="col-lg-12">
+      <div class="form-btn">
+      <button class="btn btn-inline" type="submit">
+      <i class="fas fa-paper-plane"></i>
+      <span>send message</span>
+      </button>
+      </div>
+    </div>
+    </div>
+    </form>
+    </div>
+    <div class="col-md-6 col-lg-5">
+    <div class="contact-img">
+    <img src="images/banner/contact.png" alt="contact">
+    </div>
+    </div>
+  </div>
+  </div>
+  </section>
+  <!--=====================================
+    CONTACT PART END
+  =======================================-->
+  <!--=====================================
+    FOOTER PART START
+  =======================================-->
+  <section class="section footer-part">
+  <!-- <div class="container">
+  <div class="row">
+  </div>
+  </div> -->
+  </section>
+  <!--=====================================
+    FOOTER PART END
+  =======================================-->
+  
 
-        <!--=====================================
-                    JS LINK PART START
-        =======================================-->
-        <!-- FOR BOOTSTRAP -->
-        <script src="js/vendor/jquery-1.12.4.min.js"></script>
-        <script src="js/vendor/popper.min.js"></script>
-        <script src="js/vendor/bootstrap.min.js"></script>
+  <!--=====================================
+    JS LINK PART START
+  =======================================-->
+  <!-- FOR BOOTSTRAP -->
+  <script src="js/vendor/jquery-1.12.4.min.js"></script>
+  <script src="js/vendor/popper.min.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
 
-        <!-- FOR SLICK SLIDER -->
-        <script src="js/vendor/slick.min.js"></script>
-        <script src="js/custom/slick.js"></script>
+  <!-- FOR SLICK SLIDER -->
+  <script src="js/vendor/slick.min.js"></script>
+  <script src="js/custom/slick.js"></script>
 
-        <!-- FOR COUNTERUP -->
-        <script src="js/vendor/counterup.min.js"></script>
-        <script src="js/vendor/waypoints.min.js"></script>
-        <script src="js/custom/counterup.js"></script>
+  <!-- FOR COUNTERUP -->
+  <script src="js/vendor/counterup.min.js"></script>
+  <script src="js/vendor/waypoints.min.js"></script>
+  <script src="js/custom/counterup.js"></script>
 
-        <!-- FOR INTERACTION -->
-        <script src="js/custom/main.js"></script>
-        <!--=====================================
-                    JS LINK PART END
-        =======================================-->
-    </body>
+  <!-- FOR INTERACTION -->
+  <script src="js/custom/main.js"></script>
+  <script src="js/custom/addon.js"></script>
+
+  <!-- FOR SCROLLING -->
+  <script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
+  <script src="https://unpkg.com/smoothscroll-anchor-polyfill"></script>
+
+  <!-- FOR DARK MODE TOGGLE -->
+
+  <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+  
+  <!--=====================================
+    JS LINK PART END
+  =======================================-->
+  </body>
 </html>
 
 

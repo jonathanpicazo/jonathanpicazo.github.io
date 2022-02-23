@@ -24,7 +24,7 @@
   <!-- FOR INDEX PAGE -->
   <link rel="stylesheet" href="css/custom/index.css">
   </head>
-  <body class="dark-mode">
+  <body>
 
   <!--=====================================
     SCROLL TO TOP BUTTON
@@ -46,47 +46,23 @@
             <a class="navbar-cross" href="#"><i class="fas fa-times"></i></a>
 
             <ul class="navbar-list">
-              <li class="navbar-item active"><a class="navbar-link" href="index.html">Home</a></li>
-              <li class="navbar-item"><a class="navbar-link" href="resume.html">About</a></li>
-              <li class="navbar-item"><a class="navbar-link" href="resume.html">Experience</a></li>
-              <li class="navbar-item"><a class="navbar-link" href="contact.html">Education</a></li>
-              <li class="navbar-item"><a class="navbar-link" href="contact.html">Contact</a></li>
+              <li class="navbar-item"><a class="navbar-link" href="#top">Home</a></li>
+              <li class="navbar-item"><a class="navbar-link scroll-to" href="#btn-section" id="about">About</a></li>
+              <li class="navbar-item"><a class="navbar-link scroll-to" href="#btn-section" id="experience">Experience</a></li>
+              <li class="navbar-item"><a class="navbar-link scroll-to" href="#btn-section" id="education">Education</a></li>
+              <li class="navbar-item"><a class="navbar-link" href="#contact">Contact</a></li>
             </ul>
           </div>
-          <div class="dark-mode-btn">
-            <label>
-              <input class='toggle-checkbox' type='checkbox' id="theme-toggle">
-              <div class='toggle-slot'>
-                <div class='sun-icon-wrapper'>
-                  <div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"></div>
-                </div>
-                <div class='toggle-button'></div>
-                <div class='moon-icon-wrapper'>
-                  <div class="iconify moon-icon" data-icon="feather-moon" data-inline="false"></div>
-                </div>
-              </div>
-            </label>
+          <div class="theme-icon">
+            <a id="theme-toggle"><i class="fas fa-moon"></i></a>
           </div>
+
         </div>
       </div>
     </nav>
     <!--=====================================
           NAVBAR PART END
     =======================================-->
-    <div class="dark-mode-btn">
-      <label>
-        <input class='toggle-checkbox' type='checkbox' id="theme-toggle">
-        <div class='toggle-slot'>
-          <div class='sun-icon-wrapper'>
-            <div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"></div>
-          </div>
-          <div class='toggle-button'></div>
-          <div class='moon-icon-wrapper'>
-            <div class="iconify moon-icon" data-icon="feather-moon" data-inline="false"></div>
-          </div>
-        </div>
-      </label>
-    </div>
 
   <!--=====================================
     BANNER PART START
@@ -105,16 +81,12 @@
     <div class="col-lg-6 col-md-6">
     <div class="banner-content">
       <ul class="banner-icon">
-      <!-- <li><a class="icon icon-inline" href="#"><i class="fab fa-facebook-f"></i></a></li>
-      <li><a class="icon icon-inline" href="#"><i class="fab fa-twitter"></i></a></li> -->
       <li><a class="icon icon-inline" href="https://www.linkedin.com/in/jonathan-picazo-709362195" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
       <li><a class="icon icon-inline" href="https://github.com/jonathanpicazo" target="_blank"><i class="fab fa-github"></i></a></li>
-      <!-- <li><a class="icon icon-inline" href="#"><i class="fab fa-instagram"></i></a></li>
-      <li><a class="icon icon-inline" href="#"><i class="fab fa-dribbble"></i></a></li> -->
       </ul>
       <div class="banner-text">
       <h1>Welcome to my portfolio!</h1>
-      <p>I am a developer who loves automation, web development, and learning new things.</p>
+      <p>I am a developer who loves automation, web development, UI development and learning new things.</p>
       </div>
     </div>
     </div>
@@ -130,13 +102,12 @@
   <!--=====================================
     RESUME PART START
   =======================================-->
-  <section class="section resume-part">
+  <section class="resume-part" id="btn-section">
   <div class="container">
   <div class="row">
     <div class="col-lg-12">
     <div class="section-heading">
     <p>my <span>resume</span></p>
-    <h2>Some basic information about myself</h2>
     <h4>Click on each to learn more</h4>
     </div>
     </div>
@@ -145,29 +116,23 @@
     <div class="col-lg-12">
     <ul class="resume-cate-btn">
     <li>
-    <button class="cate-btn active" onclick="filter('about-part')">
+    <button class="cate-btn active" onclick="filter('about-part')" id="about-btn">
       <i class="fas fa-user"></i>
       <span>about me</span>
     </button>
     </li>
     <li>
-    <button class="cate-btn" onclick="filter('exper-part')">
+    <button class="cate-btn" onclick="filter('exper-part')" id="experience-btn">
       <i class="fas fa-user-tie"></i>
       <span>experience</span>
     </button>
     </li>
     <li>
-    <button class="cate-btn" onclick="filter('edu-part')">
+    <button class="cate-btn" onclick="filter('edu-part')" id="education-btn">
       <i class="fas fa-user-graduate"></i>
       <span>education</span>
     </button>
     </li>
-    <!-- <li>
-    <button class="cate-btn" onclick="filter('refer-part')">
-      <i class="fas fa-users"></i>
-      <span>reference</span>
-    </button>
-    </li> -->
     </ul>
     </div>
   </div>
@@ -181,7 +146,7 @@
   <!--=====================================
     ABOUT PART START
   =======================================-->
-  <section class="section about-part cate-active">
+  <section class="about-part cate-active">
   <div class="container">
   <div class="row">
     <div class="col-lg-7">
@@ -234,7 +199,7 @@
   <!--=====================================
     EXPERIENCE PART START
   =======================================-->
-  <section class="section exper-part cate-active">
+  <section class="exper-part cate-active">
   <div class="container">
   <div class="row">
     <div class="col-md-6 col-lg-6">
@@ -336,7 +301,7 @@
   <!--=====================================
     EDUCATION PART START
   =======================================-->
-  <section class="section edu-part cate-active">
+  <section class="edu-part cate-active">
   <div class="container">
   <div class="row">
     <div class="col-md-6 col-lg-6">
@@ -706,7 +671,7 @@
   <!--=====================================
     CONTACT PART START
   =======================================-->
-  <section class="section contact-part">
+  <section class="section contact-part" id="contact">
   <div class="container">
   <div class="row">
     <div class="col-lg-12">
@@ -752,7 +717,7 @@
   </div>
   <div class="row">
     <div class="col-md-6 col-lg-7">
-    <form>
+    <form action="mailto:jonathanpicazo@outlook.com" method="get" enctype="text/plain">
     <div class="row">
     <div class="col-lg-6">
       <div class="form-group">

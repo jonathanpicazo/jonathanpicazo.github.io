@@ -31,6 +31,10 @@ Themeforest Profile  :  https://themeforest.net/user/mironcoder
   --dark-mode: #202124;
   --dark-mode-white: #bdc1c6;
   --dark-mode-secondary: #9146FF;
+  --extra-light-purple: #c497db;
+  --light-purple: ;
+  --dark-purple: #321840;
+  --darker-purple: #180c1e;
 }
 
 /*=====================================
@@ -208,8 +212,17 @@ h6 {
 .dark-mode {
   background-color: var(--dark-mode);
 }
+.dark-mode .navbar-fixed {
+  background-color: var(--dark-purple);
+}
+.dark-mode .navbar-fixed .navbar-item.active .navbar-link,
+.dark-mode .navbar-item .navbar-link:hover {
+  color: var(--extra-light-purple);
+}
+.dark-mode .navbar-fixed .navbar-item .navbar-link {
+  color: var(--dark-mode-white);
+}
 .dark-mode .resume-card,
-.dark-mode .banner-part,
 .dark-mode .cate-btn,
 .dark-mode .skills-card {
   background-color: var(--dark-mode);
@@ -225,16 +238,16 @@ h6 {
 }
 .dark-mode .cate-btn.active,
 .dark-mode .back2top-btn i,
-.dark-mode .btn-inline {
+.dark-mode .btn-inline,
+.dark-mode .skills-card:hover,
+.dark-mode .resume-card:hover {
   background-color: var(--dark-mode-secondary);
 }
 .dark-mode .resume-icon i,
 .dark-mode .section-heading p span,
 .dark-mode .icon-inline, 
 .dark-mode .navbar-item.active .navbar-link,
-.dark-mode .navbar-item .navbar-link:hover,
-.dark-mode .skills-card:hover,
-.dark-mode .resume-card:hover {
+.dark-mode .navbar-item .navbar-link:hover {
   color: var(--dark-mode-secondary);
 }
 .dark-mode .icon-inline i {
@@ -257,110 +270,62 @@ h6 {
   color: #777777
 }
 
+.dark-mode .contact-address .address-icon i,
+.dark-mode .contact-address:hover .address-icon i {
+  background: var(--dark-mode-secondary);
+}
+
+.dark-mode .resume-meta h6 {
+  background: var(--extra-light-purple);
+  color: var(--darker-purple)
+}
+.dark-mode .navbar-toggle i {
+  background-color: var(--dark-mode-secondary);
+}
+
+
+@media screen and (max-width: 1099px) {
+  .dark-mode .navbar-slide .navbar-cross i {
+    background-color: var(--dark-mode-secondary);
+    color: var(--white)
+  }
+  .dark-mode .navbar-slide .navbar-cross i:hover {
+    background-color: var(--heading);
+  }
+  .dark-mode .navbar-slide {
+    background-color: var(--dark-mode);
+  }
+}
 
 /*=====================================
             DARK MODE BUTTON
 ======================================*/
-.dark-mode-btn-container {
-  display: flex;
-  justify-content: flex-end;
-}
-.dark-mode-btn label {
-  transform: scale(.3);
-}
-
-.dark-mode-btn .toggle-checkbox {
-  position: absolute;
-  opacity: 0;
+.theme-icon a {
   cursor: pointer;
-  height: 0;
-  width: 0;
 }
-
-.dark-mode-btn .toggle-slot {
-  position: relative;
-  height: 10em;
-  width: 20em;
-  border: 5px solid #e4e7ec;
-  border-radius: 10em;
-  background-color: white;
-  box-shadow: 0px 10px 25px #e4e7ec;
-  transition: background-color 250ms;
+.theme-icon .fa-sun {
+  color: #fcdb33;
 }
-
-.dark-mode-btn .toggle-checkbox:checked ~ .toggle-slot {
-  background-color: #374151;
+.theme-icon .fa-moon {
+  color: #8865A0
 }
-
-.dark-mode-btn .toggle-button {
-  transform: translate(11.75em, 1.75em);
-  position: absolute;
-  height: 6.5em;
-  width: 6.5em;
-  border-radius: 50%;
-  background-color: #ffeccf;
-  box-shadow: inset 0px 0px 0px 0.75em #ffbb52;
-  transition: background-color 250ms, border-color 250ms, transform 500ms cubic-bezier(.26,2,.46,.71);
-}
-
-.dark-mode-btn .toggle-checkbox:checked ~ .toggle-slot .toggle-button {
-  background-color: #485367;
-  box-shadow: inset 0px 0px 0px 0.75em white;
-  transform: translate(1.75em, 1.75em);
-}
-
-.dark-mode-btn .sun-icon {
-  position: absolute;
-  height: 6em;
-  width: 6em;
-  color: #ffbb52;
-}
-
-.dark-mode-btn .sun-icon-wrapper {
-  position: absolute;
-  height: 6em;
-  width: 6em;
-  opacity: 1;
-  transform: translate(2em, 2em) rotate(15deg);
-  transform-origin: 50% 50%;
-  transition: opacity 150ms, transform 500ms cubic-bezier(.26,2,.46,.71);
-}
-
-.dark-mode-btn .toggle-checkbox:checked ~ .toggle-slot .sun-icon-wrapper {
-  opacity: 0;
-  transform: translate(3em, 2em) rotate(0deg);
-}
-
-.dark-mode-btn .moon-icon {
-  position: absolute;
-  height: 6em;
-  width: 6em;
-  color: white;
-}
-
-.dark-mode-btn .moon-icon-wrapper {
-  position: absolute;
-  height: 6em;
-  width: 6em;
-  opacity: 0;
-  transform: translate(11em, 2em) rotate(0deg);
-  transform-origin: 50% 50%;
-  transition: opacity 150ms, transform 500ms cubic-bezier(.26,2.5,.46,.71);
-}
-
-.dark-mode-btn .toggle-checkbox:checked ~ .toggle-slot .moon-icon-wrapper {
-  opacity: 1;
-  transform: translate(12em, 2em) rotate(-15deg);
-}
-
 /*=====================================
             ADDITIONAL STYLING
 ======================================*/
 
+.contact-address .address-icon i {
+  background: var(--primary);
+}
 .about-list ul:nth-of-type(2) li:nth-of-type(1) p {
   white-space: nowrap;
 }
+.about-part {
+  padding: 80px 0px 0px;
+}
 
+.banner-part {
+  background: unset !important;
+}
 
 /*=====================================
             DROPDOWN MENU STYLE
@@ -528,10 +493,6 @@ h6 {
   margin-right: 15px;
 }
 
-.duel-btn .btn:nth-child(1) {
-  background: var(--heading);
-  border-color: var(--heading);
-}
 
 .duel-btn .btn:nth-child(2):hover {
   background: var(--primary);
@@ -802,7 +763,7 @@ textarea.form-control {
   }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1099px) {
   .section {
     padding: 100px 0px 0px;
   }
@@ -937,7 +898,7 @@ textarea.form-control {
     padding: 10px 15px;
   }
   .navbar-logo img {
-    /*width: 150px;*/
+    width: 55px;
   }
   .navbar-toggle {
     display: block;
@@ -995,11 +956,14 @@ textarea.form-control {
     padding: 14px 0px;
     margin-bottom: 50px;
   }
+  .navbar-part .navbar-toggle {
+    order: -1;
+  }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1099px) {
   .navbar-logo img {
-    width: 160px;
+    width: 60px;
   }
   .navbar-item {
     margin: 0px 15px;

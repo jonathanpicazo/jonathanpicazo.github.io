@@ -1,12 +1,3 @@
-/*========================================
-
-Template type        :  Personal Portfolio
-Version              :  v1.2
-Author name          :  Mironcoder
-Support mail         :  mironcoder@gmail.com
-Themeforest Profile  :  https://themeforest.net/user/mironcoder
-
-=========================================*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 :root {
   --pfamily: 'Poppins', sans-serif;
@@ -325,6 +316,9 @@ h6 {
 
 .banner-part {
   background: unset !important;
+}
+.resume-text ul {
+  list-style: circle;
 }
 
 /*=====================================

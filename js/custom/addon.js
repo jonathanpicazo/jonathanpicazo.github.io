@@ -1,32 +1,48 @@
 // FOR DARK MODE
 
-let darkModeCheckbox = document.getElementById('theme-toggle')
+// check if localStorage item exists
+var myKey = 'jpicazo-darkmode'
+
+let themeValue = window.localStorage.getItem(myKey)
+let darkModeCheckbox = document.querySelector("#theme-toggle")
+if (themeValue) {
+  handleThemeChange(darkModeCheckbox, themeValue)
+}
+
 darkModeCheckbox.addEventListener('click', toggleTheme)
 
-
-function toggleTheme(evt) {
-  let target = evt.currentTarget.firstChild
-  if (evt.target.classList[1] === 'fa-moon') {
+function handleThemeChange(parent, mode) {
+  let target = parent.firstChild
+  console.log(target)
+  console.log(mode)
+  if (mode === 'fa-moon') {
     document.body.classList.add('dark-mode')
     target.classList.remove('fa-moon')
     target.classList.add('fa-sun')
+    window.localStorage.setItem(myKey, 'fa-moon')
   }
   else {
     document.body.classList.remove('dark-mode')
     target.classList.add('fa-moon')
     target.classList.remove('fa-sun')
+    window.localStorage.setItem(myKey, 'fa-sun')
   }
 }
 
+
+function toggleTheme(evt) {
+  let themeMode = evt.currentTarget.firstChild.classList[1]
+  handleThemeChange(evt.currentTarget, themeMode)
+}
+
+// show section and scroll to it
+
 let btns = document.querySelectorAll(".scroll-to")
-console.log(btns)
 if (btns) {
   btns.forEach(function(el){
     el.addEventListener('click', scrollPop);
   });
 }
-
-// show section and scroll to it
 function scrollPop(evt) {
   let target = evt.currentTarget
   let associatedBtn = document.getElementById(target.id + '-btn')

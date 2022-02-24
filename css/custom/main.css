@@ -275,7 +275,7 @@ h6 {
 }
 
 
-@media screen and (max-width: 1099px) {
+@media screen and (max-width: 991px) {
   .dark-mode .navbar-slide .navbar-cross i {
     background-color: var(--dark-mode-secondary);
     color: var(--white)

@@ -311,7 +311,11 @@ h6 {
   white-space: nowrap;
 }
 .about-part {
-  padding: 80px 0px 0px;
+  margin: 80px 0px 0px;
+}
+
+.skills-margin {
+  margin: 80px 0px 0px;
 }
 
 .banner-part {
@@ -321,6 +325,9 @@ h6 {
   list-style: circle;
 }
 
+#skills {
+  scroll-margin-top: 110px;
+}
 /*=====================================
             DROPDOWN MENU STYLE
 ======================================*/
@@ -766,6 +773,13 @@ textarea.form-control {
 /*======================================
            NAVBAR PART STYLE
 =======================================*/
+
+.navbar-cross {
+  border: none;
+  background: none;
+}
+
+
 .navbar-part {
   padding: 0px 15px;
 }

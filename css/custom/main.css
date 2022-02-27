@@ -292,6 +292,30 @@ h6 {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .resume-part .col-lg-12 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .resume-part .container {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .resume-part .col-lg-12 .resume-cate-btn li {
+     margin: 0px;
+  }
+  .resume-part .cate-btn {
+    font-size: 14px;
+    width: 100px;
+  }
+  .resume-part .cate-btn i {
+    font-size: 18px;
+  }
+  .resume-part .resume-cate-btn {
+    justify-content: space-evenly;
+  }
+}
+
 /*=====================================
             DARK MODE BUTTON
 ======================================*/

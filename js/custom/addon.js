@@ -6,15 +6,16 @@ var myKey = 'jpicazo-darkmode'
 let themeValue = window.localStorage.getItem(myKey)
 let darkModeCheckbox = document.querySelector("#theme-toggle")
 if (themeValue) {
-  handleThemeChange(darkModeCheckbox, themeValue)
+  handleThemeChange(darkModeCheckbox, themeValue, false)
 }
 
 darkModeCheckbox.addEventListener('click', toggleTheme)
 
-function handleThemeChange(parent, mode) {
+function handleThemeChange(parent, mode, effect) {
+  if (effect) {
+    document.body.classList.add('dark-mode-transition')
+  }
   let target = parent.firstChild
-  console.log(target)
-  console.log(mode)
   if (mode === 'fa-moon') {
     document.body.classList.add('dark-mode')
     target.classList.remove('fa-moon')
@@ -32,7 +33,7 @@ function handleThemeChange(parent, mode) {
 
 function toggleTheme(evt) {
   let themeMode = evt.currentTarget.firstChild.classList[1]
-  handleThemeChange(evt.currentTarget, themeMode)
+  handleThemeChange(evt.currentTarget, themeMode, true)
 }
 
 // show section and scroll to it
@@ -48,3 +49,8 @@ function scrollPop(evt) {
   let associatedBtn = document.getElementById(target.id + '-btn')
   associatedBtn.click()
 }
+
+//hide mobile dock on click
+
+
+

@@ -100,6 +100,10 @@ body {
   line-height: 28px;
 }
 
+.dark-mode-transition {
+  transition: all 0.5s ease-out
+}
+
 p {
   margin-bottom: 0px;
 }

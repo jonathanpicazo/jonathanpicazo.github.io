@@ -69,3 +69,5 @@ function hideMobileList(evt) {
 }
 
 
+let sendBtn = document.querySelector(".send-btn")
+

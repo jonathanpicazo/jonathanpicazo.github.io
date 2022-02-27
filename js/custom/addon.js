@@ -52,5 +52,20 @@ function scrollPop(evt) {
 
 //hide mobile dock on click
 
+let links = document.querySelectorAll(".navbar-link")
+  if (links) {
+    links.forEach(function(el) {
+      el.addEventListener('click', hideMobileList)
+    })
+  }
+
+
+function hideMobileList(evt) {
+  var mobileQuery = window.matchMedia("(max-width: 991px)").matches
+  if (mobileQuery) {
+    let closeBtn = document.querySelector('.navbar-cross')
+    closeBtn.click()
+  }
+}
 
 

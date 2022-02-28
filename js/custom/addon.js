@@ -69,5 +69,56 @@ function hideMobileList(evt) {
 }
 
 
-let sendBtn = document.querySelector(".send-btn")
+let sendBtn = document.querySelector("#send-btn")
 
+sendBtn.addEventListener('click', sendMessage)
+
+async function sendMessage(evt) {
+  let form = evt.currentTarget.closest(".contact-form")
+  let formOutcome = form.querySelector(".form-outcome")
+  formOutcome.classList.add('hide')
+  let payload = {
+    name: form.querySelector("#name").value,
+    email: form.querySelector("#email").value,
+    subject: form.querySelector("#subject").value,
+    message: form.querySelector("#message").value
+  }
+  if (payload.name === '' || payload.email === '' || payload.subject === '' || payload.message === '') {
+    formOutcome.style.color = 'red'
+    formOutcome.textContent = 'Please fill out all the form values.'
+    formOutcome.classList.remove('hide')
+  }
+  else {
+    //send form
+    try {
+      form.classList.add('blur')
+      const response = await fetch('https://email-js-jpicazo.herokuapp.com/sendForm', {
+        method: 'POST',
+        cache: 'no-cache',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(
+          payload
+        )
+      });
+      if (response.status === 200) {
+        // add sent
+        formOutcome.textContent = 'Email has been sent.'
+        formOutcome.style.color = 'green'
+        formOutcome.classList.remove('hide')
+        form.classList.remove('blur')
+      }
+      else {
+        //error, retry
+        formOutcome.textContent = 'Error sending email, if these keeps occuring, email me directly at jonathanpicazo@outlook.com.'
+        formOutcome.style.color = 'red'
+        formOutcome.classList.remove('hide')
+        form.classList.remove('blur')
+      }
+    }
+    catch(error) {
+      console.log('error sending form', error)
+    }
+  }
+}

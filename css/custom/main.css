@@ -328,6 +328,11 @@ h6 {
 .theme-icon .fa-moon {
   color: #8865A0
 }
+.form-sending {
+  pointer-events: none;
+  cursor: default;
+  filter: opacity(0.5);
+}
 /*=====================================
             ADDITIONAL STYLING
 ======================================*/
@@ -355,6 +360,17 @@ h6 {
 
 #skills {
   scroll-margin-top: 110px;
+}
+.hide {
+  display: none;
+}
+.form-outcome {
+  padding: 5px 15px 15px 15px;
+}
+.blur {
+  pointer-events: none;
+  cursor: default;
+  filter: opacity(0.5);
 }
 /*=====================================
             DROPDOWN MENU STYLE

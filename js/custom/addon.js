@@ -74,6 +74,9 @@ let sendBtn = document.querySelector("#send-btn")
 sendBtn.addEventListener('click', sendMessage)
 
 async function sendMessage(evt) {
+  // switch icon to loader and text
+  let sendBtnSpan = evt.currentTarget.querySelector('span')
+  let sendBtnIcon = evt.currentTarget.querySelector('i')
   let form = evt.currentTarget.closest(".contact-form")
   let formOutcome = form.querySelector(".form-outcome")
   formOutcome.classList.add('hide')
@@ -91,6 +94,9 @@ async function sendMessage(evt) {
   else {
     //send form
     try {
+      sendBtnSpan.textContent = 'Sending'
+      sendBtnIcon.classList.remove('fa-paper-plane')
+      sendBtnIcon.classList.add(...['fa-spinner', 'fa-spin'])
       form.classList.add('blur')
       const response = await fetch('https://email-js-jpicazo.herokuapp.com/sendForm', {
         method: 'POST',
@@ -106,16 +112,18 @@ async function sendMessage(evt) {
         // add sent
         formOutcome.textContent = 'Email has been sent.'
         formOutcome.style.color = 'green'
-        formOutcome.classList.remove('hide')
-        form.classList.remove('blur')
       }
       else {
         //error, retry
         formOutcome.textContent = 'Error sending email, if these keeps occuring, email me directly at jonathanpicazo@outlook.com.'
         formOutcome.style.color = 'red'
-        formOutcome.classList.remove('hide')
-        form.classList.remove('blur')
+        
       }
+      formOutcome.classList.remove('hide')
+      form.classList.remove('blur')
+      sendBtnSpan.textContent = 'send message'
+      sendBtnIcon.classList.remove(...['fa-spinner', 'fa-spin'])
+      sendBtnIcon.classList.add('fa-paper-plane')
     }
     catch(error) {
       console.log('error sending form', error)
